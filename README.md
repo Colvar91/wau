@@ -1,7 +1,7 @@
 # 📦 **WAU – World Auto Upgrade**  
 *A lightweight auto-equip addon for World of Warcraft.*
 
-![Version](https://img.shields.io/github/v/release/USER/REPO?label=Version&color=4caf50)
+![Version](https://img.shields.io/github/v/release/Colvar91/wau?label=Version&color=4caf50)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Downloads](https://img.shields.io/github/downloads/USER/REPO/total?color=ff9800)
 ![WoW Addon](https://img.shields.io/badge/WoW-Addon-7952B3.svg)

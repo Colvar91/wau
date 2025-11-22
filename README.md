@@ -3,7 +3,7 @@
 
 ![Version](https://img.shields.io/github/v/release/Colvar91/wau?label=Version&color=4caf50)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Downloads](https://img.shields.io/github/downloads/USER/REPO/total?color=ff9800)
+![Downloads](https://img.shields.io/github/downloads/Colvar91/wau/total?color=ff9800)
 ![WoW Addon](https://img.shields.io/badge/WoW-Addon-7952B3.svg)
 
 > **Replace `USER/REPO` above with your GitHub username & repository name.**

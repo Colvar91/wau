@@ -1,22 +1,21 @@
-## Interface: 110205
-## Title: WAU - Auto Upgrade
-## Notes: Automatically equips better gear up to ilvl 739. Prevents duplicate Trinket/Ring abilities. /wau
-## Version: 1.11
-## Author: WAU
-## SavedVariablesPerCharacter: WoWAutoUpgradeDB
+## Interface: 110002
+## Title: WAU - World Auto Upgrade
+## Notes: Auto equips upgrades
+## Author: ChatGPT
+## Version: 1.12
+## SavedVariables: WoWAutoUpgradeDB
 
 Libs\LibStub.lua
 Libs\AceLocale-3.0.lua
-
 locales\enUS.lua
 locales\deDE.lua
-locales\ruRU.lua
 locales\frFR.lua
 locales\esES.lua
 locales\esMX.lua
 locales\itIT.lua
 locales\ptBR.lua
 locales\koKR.lua
+locales\ruRU.lua
 locales\zhCN.lua
 locales\zhTW.lua
 

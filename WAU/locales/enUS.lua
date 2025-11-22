@@ -1,17 +1,20 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("WAU", "enUS", true)
+if not L then return end
 
 L["ADDON_NAME"] = "WAU"
-L["ADDON_LOADED"] = "WAU loaded - type /wau to open settings."
-L["AUTO_MODE"] = "Enable or disable automatic upgrade mode."
+L["ADDON_LOADED"] = "WAU loaded. Type /wau to open settings."
+L["AUTO_ON"] = "Auto mode enabled."
+L["AUTO_OFF"] = "Auto mode disabled."
+L["AUTO_MODE"] = "Enable or disable automatic equipment upgrading."
 L["CANNOT_UPGRADE_COMBAT"] = "Cannot upgrade during combat."
 L["UPGRADED_SLOT"] = "Upgraded: %s"
 L["CONFIG_TITLE"] = "WAU Settings"
 L["BUTTON_APPLY"] = "Apply & Reload"
 L["MINIMAP_TOOLTIP"] = "Click to open WAU settings"
 L["NO_UPGRADES_FOUND"] = "No upgrades found."
-L["SLOT_SETTINGS"] = "Slot Settings"
-
--- Slot names
+L["SLOT_SETTINGS"] = "Equipment Slot Settings"
+L["MAX_ILVL"] = "Max Item Level"
+L["USAGE_WAU_MAX"] = "Usage: /wau max <number>"
 L["Head"] = "Head"
 L["Neck"] = "Neck"
 L["Shoulder"] = "Shoulders"

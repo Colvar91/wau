@@ -2,27 +2,27 @@ local L = LibStub("AceLocale-3.0"):GetLocale("WAU")
 
 function WAU_InitOptionsPanel()
     ----------------------------------------------------------
-    -- Main panel
+    -- Hauptpanel
     ----------------------------------------------------------
     local panel = CreateFrame("Frame", "WAUOptionsPanel", UIParent)
     panel.name = L["ADDON_NAME"]
 
     ----------------------------------------------------------
-    -- Title
+    -- Titel
     ----------------------------------------------------------
     local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalHuge")
     title:SetPoint("TOPLEFT", 16, -16)
     title:SetText(L["CONFIG_TITLE"])
 
     ----------------------------------------------------------
-    -- Auto Mode Checkbox
+    -- Auto-Modus Checkbox
     ----------------------------------------------------------
     local autoCB = CreateFrame("CheckButton", nil, panel, "UICheckButtonTemplate")
     autoCB:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -28)
 
     autoCB.text = autoCB:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
     autoCB.text:SetPoint("LEFT", autoCB, "RIGHT", 6, 0)
-    autoCB.text:SetText(L["AUTO_MODE"])
+    autoCB.text:SetText(L["AUTO_ON"] .. " / " .. L["AUTO_OFF"])
 
     autoCB:SetChecked(WoWAutoUpgradeDB.auto == true)
     autoCB:SetScript("OnClick", function(self)
@@ -30,14 +30,14 @@ function WAU_InitOptionsPanel()
     end)
 
     ----------------------------------------------------------
-    -- Slot Settings Title
+    -- Slot-Blocker Titel
     ----------------------------------------------------------
     local slotTitle = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
     slotTitle:SetPoint("TOPLEFT", autoCB, "BOTTOMLEFT", 0, -24)
-    slotTitle:SetText(L["SLOT_SETTINGS"])
+    slotTitle:SetText(L["CONFIG_TITLE"] .. " – Slots")
 
     ----------------------------------------------------------
-    -- Slot Checkboxes (2 columns)
+    -- Slot Checkboxes
     ----------------------------------------------------------
     local slots = {
         {1,  L["Head"]},      {2,  L["Neck"]},
@@ -50,7 +50,7 @@ function WAU_InitOptionsPanel()
         {16, L["Main Hand"]}, {17, L["Off Hand"]},
     }
 
-    local col1X, col2X = 20, 260
+    local col1, col2 = 20, 260
     local rowY = -160
     panel.checkboxes = {}
 
@@ -63,9 +63,9 @@ function WAU_InitOptionsPanel()
         cb.text:SetText(label)
 
         if i % 2 == 1 then
-            cb:SetPoint("TOPLEFT", col1X, rowY)
+            cb:SetPoint("TOPLEFT", col1, rowY)
         else
-            cb:SetPoint("TOPLEFT", col2X, rowY)
+            cb:SetPoint("TOPLEFT", col2, rowY)
             rowY = rowY - 26
         end
 
@@ -78,7 +78,7 @@ function WAU_InitOptionsPanel()
     end
 
     ----------------------------------------------------------
-    -- Apply & Reload Button
+    -- Reload Button
     ----------------------------------------------------------
     local reloadBtn = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
     reloadBtn:SetSize(160, 26)
@@ -89,17 +89,17 @@ function WAU_InitOptionsPanel()
     end)
 
     ----------------------------------------------------------
-    -- Dragonflight / 11.x Settings Registration
+    -- Registrierung (Dragonflight / 11.x API)
     ----------------------------------------------------------
     local category = Settings.RegisterCanvasLayoutCategory(panel, panel.name)
-    local subcategory = Settings.RegisterAddOnCategory(category)
+    Settings.RegisterAddOnCategory(category)
 
-    -- Stored for /wau
-    WAU_Category = subcategory
+    -- Für /wau speichern
+    WAU_Category = category
 end
 
 ----------------------------------------------------------
--- Initialization
+-- Initialisierung
 ----------------------------------------------------------
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_LOGIN")

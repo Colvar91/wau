@@ -1,0 +1,31 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("WAU", "deDE")
+if not L then return end
+
+L["ADDON_NAME"] = "WAU"
+L["ADDON_LOADED"] = "WAU geladen - schreibe /wau."
+L["AUTO_MODE"] = "Ein- und Ausschalten des automatischen Verbesserungsmodus."
+L["CANNOT_UPGRADE_COMBAT"] = "Kann während des Kampfes nicht verbessern."
+L["UPGRADED_SLOT"] = "Verbessert: %s"
+L["CONFIG_TITLE"] = "WAU Einstellungen"
+L["BUTTON_APPLY"] = "Anwenden & Neu laden"
+L["MINIMAP_TOOLTIP"] = "Klicken, um WAU-Einstellungen zu öffnen"
+L["NO_UPGRADES_FOUND"] = "Keine Verbesserungen gefunden."
+L["SLOT_SETTINGS"] = "Slot Einstellungen"
+
+-- Slot names
+L["Head"] = "Kopf"
+L["Neck"] = "Hals"
+L["Shoulder"] = "Schultern"
+L["Back"] = "Rücken"
+L["Chest"] = "Brust"
+L["Waist"] = "Taille"
+L["Legs"] = "Beine"
+L["Feet"] = "Füße"
+L["Wrist"] = "Handgelenke"
+L["Hands"] = "Hände"
+L["Ring 1"] = "Ring 1"
+L["Ring 2"] = "Ring 2"
+L["Trinket 1"] = "Schmuck 1"
+L["Trinket 2"] = "Schmuck 2"
+L["Main Hand"] = "Waffenhand"
+L["Off Hand"] = "Schildhand"

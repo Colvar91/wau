@@ -1,0 +1,31 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("WAU", "ruRU")
+if not L then return end
+-- Translator ZamestoTV
+L["ADDON_NAME"]          = "WAU"
+L["ADDON_LOADED"]        = "WAU загружен Команда: /wau."
+L["AUTO_MODE"] = "Включить или отключить автоматический режим улучшения."
+L["CANNOT_UPGRADE_COMBAT"] = "Нельзя улучшать предметы в бою."
+L["UPGRADED_SLOT"]       = "Улучшено: %s"
+L["CONFIG_TITLE"]        = "Настройки WAU"
+L["BUTTON_APPLY"]        = "Применить и перезагрузить"
+L["MINIMAP_TOOLTIP"]     = "ЛКМ — открыть настройки WAU"
+L["NO_UPGRADES_FOUND"] = "Улучшений не найдено."
+L["SLOT_SETTINGS"] = "Настройки слотов"
+
+-- Slot names
+L["Head"]                = "Голова"
+L["Neck"]                = "Шея"
+L["Shoulder"]            = "Плечи"
+L["Back"]                = "Спина"
+L["Chest"]               = "Грудь"
+L["Waist"]               = "Пояс"
+L["Legs"]                = "Ноги"
+L["Feet"]                = "Ступни"
+L["Wrist"]               = "Запястья"
+L["Hands"]               = "Кисти рук"
+L["Ring 1"]              = "Кольцо 1"
+L["Ring 2"]              = "Кольцо 2"
+L["Trinket 1"]           = "Аксессуар 1"
+L["Trinket 2"]           = "Аксессуар 2"
+L["Main Hand"]           = "Правая рука"
+L["Off Hand"]            = "Левая рука"

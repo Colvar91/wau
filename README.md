@@ -20,6 +20,7 @@ A lightweight, multilingual auto-equip addon for World of Warcraft.
 ## Commands
 ```
 /wau          → open WAU settings
+/wau help     → shows all commands
 /wau scan     → manually scan bags
 /wau on       → enable auto mode
 /wau off      → disable auto mode

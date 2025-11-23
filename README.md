@@ -24,6 +24,7 @@ A lightweight, multilingual auto-equip addon for World of Warcraft.
 /wau scan     → manually scan bags
 /wau on       → enable auto mode
 /wau off      → disable auto mode
+/wau max      → set maximum item level
 ```
 
 ## Designed For

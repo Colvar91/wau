@@ -1,4 +1,4 @@
-## Interface: 110002
+## Interface: 110207
 ## Title: WAU - World Auto Upgrade
 ## Notes: Auto equips upgrades
 ## Author: ChatGPT

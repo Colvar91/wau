@@ -2,7 +2,7 @@
 ## Title: WAU - World Auto Upgrade
 ## Notes: Auto equips upgrades
 ## Author: ChatGPT
-## Version: 1.12
+## Version: 1.14
 ## SavedVariables: WoWAutoUpgradeDB
 
 Libs\LibStub.lua

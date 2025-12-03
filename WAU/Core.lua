@@ -259,9 +259,8 @@ f:SetScript("OnEvent", function(_, event)
         local version = meta and meta(realName, "Version") or "?"
         local iface   = meta and meta(realName, "Interface") or "?"
 
-        Print("|cffffff00WAU|r – Version |cff00ff00" .. version ..
-              "|r (Interface |cffff9900" .. iface .. "|r)")
-        Print("Max iLvl: |cffffff00" .. GetMaxILvl() .. "|r")
+        Print("Version |cff00ff00" .. version ..
+              "|r (Interface |cffff9900" .. iface .. "|r) - Max iLvl: |cffffff00" .. GetMaxILvl() .. "|r")
 
         -- Prevent auto-scan for 3 sec after login
         WAU_LoginBlockUntil = GetTime() + 3
